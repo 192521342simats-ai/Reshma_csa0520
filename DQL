@@ -1,0 +1,17 @@
+DATA QUERY LANGUAGE (DQL):
+SELECT:
+commit;
+begin transaction;
+update staff set salary = 10000 where ID = 1;
+rollback;
+begin transaction;
+update staff set salary = 10000 where ID = 1;
+savepoint salary_update;
+update staff set salary = 12000 where ID = 2;
+rollback to salary_update;
+commit;
+set transaction isolation level serializable;
+begin transaction;
+update staff set salary = 10000 where ID = 1;
+commit;
+
