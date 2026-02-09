@@ -1,0 +1,7 @@
+DATA CONTROL LANGUAGE (DCL):
+GRANT:
+GRANT permission on object to user;
+REVOKE:
+REVOKE permission on object from user;
+DENY:
+Deny delete on employees to user321;
