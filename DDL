@@ -1,0 +1,14 @@
+DATA DEFINITION LANGUAGE(DDL)
+CREATE:
+create database practice;
+use practice;
+create table employees(ID INT PRIMARY KEY, Name varchar(100), Age INT,Department varchar(50));
+ALTER:
+alter table employees ADD salary DECIMAL(10,2);
+rename table employees to Staff;
+DROP:
+drop table sales;
+TRUNCATE:
+    truncate table products;
+RENAME:
+rename tables products to product;
