@@ -1,0 +1,15 @@
+DATA MANIPULATION LANGUAGE(DML)
+SELECT:
+select worker_id, worker_name from employees where salary>100000;
+INSERT:
+insert into worker(ID, Name, AGE, Department) values(1,'riya', 31, 'HR');
+insert into worker(ID, Name, AGE, Department) values(2,'diya doe', 42, 'Manager');
+insert into worker(ID, Name, AGE, Department) values(3,'piya', 24, 'Assistant Manager');
+insert into worker(ID, Name, AGE, Department) values(4, 'sam', 22, 'Marketing Head');
+insert into worker(ID, Name, AGE, Department) values(5, 'ram',26, 'Team Leader');
+update worker SET Age = 24 WHERE ID = 1;
+UPDATE:
+Update worker set age=31 where ID =1;
+Update worker set salary = 6000 where id=2;
+DELETE:
+Delete from worker where id=1;
